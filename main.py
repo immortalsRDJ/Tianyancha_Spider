@@ -173,10 +173,10 @@ def run(playwright):
         page.get_by_text("登录/注册").first.click()
         page.locator(".login-toggle").click()
 
-        # Enter login details
-        page.get_by_placeholder("请输入中国大陆手机号").fill("131 7625 8693")
+        # Enter login details (replace with your own account)
+        page.get_by_placeholder("请输入中国大陆手机号").fill("")
         page.get_by_text("密码登录").click()
-        page.get_by_placeholder("请输入登录密码").fill("gh757603")
+        page.get_by_placeholder("请输入登录密码").fill("")
         page.get_by_label("我已阅读并同意《用户协议》《隐私权政策》").check()
         page.get_by_role("button", name="登录").click()
 
